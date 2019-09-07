@@ -13,8 +13,7 @@ def mathemagician(coeffs):
     poly_coeffs = ''
     i = 0
     while(higher > 0):
-        poly_coeffs += '+' + str(higher % (one_val+1)) + 'x^' + str(i) 
-        print(poly_coeffs)
+        poly_coeffs += '+' + str(higher % (one_val+1)) + 'x^' + str(i)
         higher  = higher // (one_val+1)
         i = i+1
     return(poly_coeffs[1:])
